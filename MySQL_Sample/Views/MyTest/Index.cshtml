@@ -1,0 +1,13 @@
+﻿<table>
+    <tr>
+        <th>ID</th> <th>Name</th> <th>Description</th>
+    </tr>
+    @foreach(var item in ViewBag.UserList)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.name</td>
+            <td>@item.description</td>
+        </tr>
+    }
+</table>
